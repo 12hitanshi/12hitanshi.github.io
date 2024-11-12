@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    text-align: left; /* Align all text to the left */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-left: 50px; /* Adjust this value to control the shift */
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    max-width: 200px;
+    height: auto;
+    margin: 10px;
+    border: 2px solid white;
+    object-fit: contain;
+}
+
+.text-container {
+    text-align: center; /* Align text to the left */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.text-container p {
+    margin: 0;
+}
+
+.project-container {
+    background-color: black;
+    padding: 20px;
+    margin-bottom: 40px;
+    text-align: left; /* Align text to the left */
+}
+
+.python-image-container {
+    display: flex;
+    justify-content: flex-start; /* Align the Python image to the left */
+    margin-top: 20px;
+}
+
+.python-image-container img {
+    max-width: 400px; /* Increase the maximum width of the Python image */
+    height: auto;
+}
