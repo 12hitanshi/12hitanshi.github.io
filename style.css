@@ -1,0 +1,115 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styling */
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: right;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Intro Section Styling */
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile-photo {
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -1; /* Send the profile photo to the background */
+}
+
+.profile-photo img {
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fills the container without stretching */
+    width: 300px;
+    height: 360px;
+}
+
+.sun-icon {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background-color: #f0c74b;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.intro-text {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.intro-text h1 {
+    font-size: 36px;
+    color: #000;
+    font-weight: bold;
+}
+
+.intro-text p {
+    font-size: 18px;
+    color: #000;
+}
+
+/* Bio Section Styling */
+.bio {
+    background-color: #f0c74b;
+    color: #333;
+    padding: 40px;
+    text-align: start;
+    width: 375%;
+    margin-top: -156px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    min-height: 220px; /* Ensure minimum height for the bio section */
+}
+
+.bio h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.bio p {
+    font-size: 18px;
+    line-height: 1.6;
+}
