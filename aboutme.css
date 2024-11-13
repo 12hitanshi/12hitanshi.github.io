@@ -11,18 +11,41 @@ body {
     padding: 20px;
     text-align: left;
     font-weight: bold
+
 }
 
 .title {
     font-size: 36px;
     margin-bottom: 20px;
     color: #ffffff;
+
+}
+
+.icon-text-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the gap as needed */
 }
 
 p {
     font-size: 16px;
     line-height: 1.2;
     margin-bottom: 10px;
+}
+
+.yellow-half {
+    background-color: #F0C74B;
+    color: #000;
+    padding: 100px;
+    text-align: center;
+}
+
+.black-half {
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    line-height: 2.0; /* Adjust the value as needed */
 }
 
 .profile-images {
@@ -68,3 +91,70 @@ header a {
     text-decoration: none;
     font-weight: bold;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.timeline {
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    flex-direction: row-reverse;
+    text-align: left;
+}
+
+.timeline-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.timeline-content p {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6a500;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+    filter: invert(1);
+    object-fit: contain; /* Ensures the image fits within the container without stretching */
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
