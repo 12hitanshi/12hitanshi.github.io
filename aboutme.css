@@ -104,6 +104,7 @@ header a {
     width: 90%;
     max-width: 800px;
     position: relative;
+    margin-left: 400px;
 }
 
 .timeline-item {
